@@ -1,0 +1,70 @@
+@import "./header";
+@import "./item";
+@import "./cartItem";
+@import "./filter";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+.App {
+  height: 100vh;
+  font-family: Monsterrat, Arial, Helvetica, sans-serif;
+}
+
+//Home Page-Styling
+
+//Grid View of Nav, Main Content, Footer
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 7rem 1fr 3rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+header {
+  grid-area: header;
+  background: rgb(178, 54, 114);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+main {
+  grid-area: main;
+  background-color: rgba(236, 180, 205, 0.5);
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(178, 54, 114);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//Distribute Maincontent into sider bar and products view
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 80 8rem;
+}
+
+.sidebar {
+  flex: 10 1rem;
+}

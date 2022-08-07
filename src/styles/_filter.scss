@@ -1,0 +1,52 @@
+.filter-container {
+  background-color: #2c0d52;
+  height: 100vh;
+  text-align: center;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    border-top: 1px solid #fff;
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      label {
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .gender {
+    flex: 1;
+  }
+  .color {
+    flex: 2;
+  }
+  .price-range {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    div {
+      padding: 0rem 2rem 0rem 1rem;
+    }
+  }
+  .item-type {
+    flex: 3;
+  }
+}
